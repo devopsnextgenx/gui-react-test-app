@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './Body.css';
-import Counter from '../../common/counter/Counter';
+import { Outlet } from "react-router-dom";
 
 const Body = (props:any) => {
   return (
     <div className='Body'>
         <div className='section'>
-            <Counter initialCount={5}/>
+          <Outlet />
         </div>
     </div>
   )

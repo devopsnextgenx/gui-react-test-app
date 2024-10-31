@@ -3,21 +3,21 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Header from './components/sections/header/Header';
-import Footer from './components/sections/footer/Footer';
-import Body from './components/sections/body/Body';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import App from './pages/app/App';
+import Home from './pages/home/Home';
+import Counter from './pages/counter/Counter';
+import { navbarxRouter } from './components/common/navbarx/Navbarx';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+
+
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <div className='App'>
-      <Header />
-      <Body />
-      <Footer />
-    </div>
+    <RouterProvider router={navbarxRouter} />
   </React.StrictMode>
 );
 
