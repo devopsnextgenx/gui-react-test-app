@@ -1,5 +1,10 @@
 # gui-react-test-app
 
+## Build docker image
+```
+docker build -t amitkshirsagar13/gui-react-test-app .
+```
+
 ## Run in docker
 
 ```
