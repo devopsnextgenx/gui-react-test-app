@@ -8,7 +8,7 @@ docker build -t amitkshirsagar13/gui-react-test-app .
 ## Run in docker
 
 ```
-docker run --name gui-test-app -d  -p 3000:80 amitkshirsagar13/gui-react-test-app
+docker run --name gui-test-app -d -p 3000:80 amitkshirsagar13/gui-react-test-app
 ```
 
 # Getting Started with Create React App
